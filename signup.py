@@ -1,9 +1,8 @@
 import time
+import os
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-
-import os
 
 
 def proceed():
@@ -51,5 +50,5 @@ while not success:
 
 print(f'\n\n Got the otp on {counter} retry. HURRY!!!!!!!!!!!!!!!\n')
 
-os.system('alacritty -e python3 /home/hawk/beeper.py')
+os.system('alacritty -e python3 beeper.py')
 time.sleep(99999)
